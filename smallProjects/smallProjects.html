@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="My Small Projects"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles.css"/>
+        <title>My First HTML Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Small Projects</h1>
+            <nav>
+                <a href="webpage.html" target="_blank">My Blog</a>
+            </nav>
+            <p>Hey,World! This is my very first HTML form. It is <time datetime="2026-01-15T08:45">January 15, 2026</time>, 7 days since my last post. I've been keeping up with studying and practicing code everyday, and it's been a week since I updated, so I figured I wanted to try out making small projects to get some hands on experience.</p>
+        </header>
+        <hr>
+        <main>
+            <section id="my-first-form">
+            
+            <h2>My First Form</h2>
+            <time datetime="2026-01-15T08:58">01/15/2026</time></h2>
+            <p>This will be my first ever form. I have no idea what I want to make, so as I type currenlty, I'm still deliberating on what it is I want my form to be about. I'm getting pumped just thinking about it. I don't know if this is what you would call vibe coding, but I'm definitely feel like I'm in the zone when I do stuff like this, typing away and letting all the creative juices and thoughts flow out. I should probably get to making my form, though. At this rate, this is going to be just another blog post. Hmm... Okay! I've decided. I'm going to make it about a workplace facilities report.</p>
+
+            <h3>Workplace Facility Report</h3>
+            <!--Add icon/company logo and address info-->
+            <address>
+                
+            </address>
+
+            <label>Date:
+            <input type="date" required name="date" id="date" size="8" aria-label="mm/dd/yyyy format"/>
+            </label>
+            
+            <form action="#" method="POST" >
+                <fieldset>
+                    <!-- date, full name (first, middle initial, last), bade #, department, email-->
+                    <legend>Originator</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" required name="full-name" id="full-name" placeholder="First, Middle Initial, Last" />
+
+                    <label for="department">Department:</label>
+                    <input type="text" name="department" id="department" placeholder="Optional" />
+
+                    <label for="badge-number">Badge #:</label>
+                    <input required type="text" name="badge-number" id="badge-number" placeholder="xxxxxxxxxx" size="10" />
+                    
+                    <label for="email">Email Adress:</label>
+                    <input type="email" required id="email" name="email" placeholder="abc@email.com" min="16" max="50" />
+                </fieldset>
+                <fieldset> <!--Reporting Info to include: facility, bldg#, discrepancy type, date first identified, description-->
+                    <legend>Reporting Information</legend>
+
+                    <label for="faciility">Facility:</label>
+                    <input type="text" id="facility" name="facility"/>
+                    
+                    <label for="building-number">Building #:</label>
+                    <input type="number" id="building-number" name="building" min="1000" max="10000" />
+
+                    <label for="discrepancy-type">Discrepancy Type:</label>
+                    <input type="text" id="discrepancy=type" name="discrepancy-type" />
+
+                    <label for="date-identified">Date First Identified:</label>
+                    <input required type="date" id="date-identified" name="date-identified" size="8"/>
+
+                    <label for="urgent">Urgent</label>
+                    <input type="checkbox" id="urgent" value="urgent" name="urgent" />
+                    
+                    <br /> <!-- For breaks, maybe use CSS. Currenlty no knowledge on CSS-->
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="15" cols="80"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>For Reviewer</legend>
+                    <!--Inspection Description, Action taken, Additional Info-->
+                    <label for="reviewer-inspection">Inspection Description</label>
+                    <textarea id="reviewer-inspection" rows="7" cols="80" name="reviewer-inspection" size="500"></textarea>
+
+                    <br /> <!--Use CSS-->
+                    <label for="action-taken">Action Taken</label>
+                    <textarea id="action-taken" name="action-taken" size="100" rows="2" cols="80"></textarea>
+
+                    <br /> <!--Use CSS-->
+                    <label for="additional-info">* Additional Info/Documentation:</label>
+                    <input type="text" id="additional-info" name="additional-info" />
+                </fieldset>
+                <fieldset> <!-- Will be about signatures and verifications-->
+                    <legend></legend> 
+                    
+                    <label for="signature">Signature</label> <!-- May need to make it for="origniator-signature"-->
+                    <input type="text" id="signature" name="originiator-signature"/> <!-- Use CSS to change look-->
+                    <label for="originator-sign-date">Date:</label>
+                    <input type="date" id="originator-sign-date" name="originator-sign-date" />
+                    <br />
+                    <label for="reviewer-name">Reviewer: </label>
+                    <input type="text" id="reviewer-name" name="reviewer-name"/>
+                    <label for="reviwer-badge-number">Badge #:</label>
+                    <input type="number" id="reviwer-badge-number" name="reviwer-badge-number" placeholder="xxxxxxxxxx" size="10" />
+                    <label for="reviewer-signature">Signature</label>
+                    <input type="text" id="reviewer-signature" name="reviewer-signature"/>
+                    <label for="reviewer-sign-date">Date:</label>
+                    <input type="date" id="reviewer-sign-date" name="reviewer-sign-date" />
+                </fieldset>
+            </form>
+            <p><span aria-hidden="true">*</span><b>Attach additional documents with this form</b></p>
+        </section>
+            <!-----------------------------------NEW POST-------------------------------->
+        <hr>
+        <section id="my-first-table">
+            <h2>My First HTML Table</h2>
+            <time datetime="2026-01-15">01/22/2026</time></h2>
+            <p>Hey, guys! It's been exactly a week and now I'm ready to put knowledge into practice. I've gotta say, I'm quite proud of myself for keeping up with the coding at least an hour every day. There's been so many things going on in life before, and now I've finally gotten myself into a rythm. I couldn't be happier and grateful that I managed to get this far. I know that this has only been a small step of many, but for each one I take, I know I'm getting farther towards my goals.</p>
+            <p>Since my last post, I have learned about HTML accessibility. You know, making the net a more accessible place for everyone. By including code that works with screen readers and other assistive technologies, programmers and engineers have truly bridged the gap and created something everyone can truly appreciate. I'm amazed. Imagine all the thought, effort, and empathy that went into creating all of this &#40;to include the code/language I'm typing, the web pages we use, the data and synchronization&#41;. Everyone, from those that need a little more help, to people from different backgrounds and styles, everyone was included when those programmer and engineers decided to make this tech world come to life.</p>
+            <p>Which got me thinking, the least I can do is take the same level of care and effort when writing my code. Maybe when I get good enough to really create something functional for others on my own, I can make it just as accessible for everyone.</p>
+
+            <table id="aircraft-readiness-chart">
+                <thead>
+                    <h3>Aircraft Readiness Chart
+                        <img src="https://img.freepik.com/premium-vector/silhouette-military-helicopter-icon-illustration-background_685023-633.jpg" alt="Silhouette military helicopter icon illustration background" width="50"/>
+                    </h3>
+                    <tr>
+                        <td><b>Aircraft</b></td>
+                        <td><b>Serial No.</b></td>
+                        <td><b>Location</b></td>
+                        <td><b>Status</b></td>
+                        <td><b>180-Day</b></td>
+                        <td><b>360-Day</b></td>
+                        <td><b>Phase Date</b></td>
+                        <td><b>Phase Type</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>161542</td>
+                        <td>Hangar</td>
+                        <td aria-label="red">🟥</td>
+                        <td>02/18/2026</td>
+                        <td>08/17/2026</td>
+                        <td>02/17/2026</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>161547</td>
+                        <td>Hangar</td>
+                        <td aria-label="yellow">🟨</td>
+                        <td>05/31/2026</td>
+                        <td>12/02/2026</td>
+                        <td>04/02/2026</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>161568</td>
+                        <td aria-label="flight line">F/L</td>
+                        <td aria-label="green">🟩</td>
+                        <td>03/10/2026</td>
+                        <td>07/11/2026</td>
+                        <td>03/11/2026</td>
+                        <td>B</td>
+                    <tr>
+                        <td>07</td>
+                        <td>161569</td>
+                        <td aria-label="flight line">F/L</td>
+                        <td aria-label="yellow">🟨</td>
+                        <td>02/18/2026</td>
+                        <td>07/11/2026</td>
+                        <td>04/22/2026</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td>161571</td>
+                        <td aria-label="flight line">F/L</td>
+                        <td aria-label="green">🟩</td>
+                        <td>03/14/2026</td>
+                        <td>09/10/2026</td>
+                        <td>03/11/2026</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>161575</td>
+                        <td aria-label="flight line">F/L</td>
+                        <td aria-label="green">🟩</td>
+                        <td>05/11/2026</td>
+                        <td>05/11/2026</td>
+                        <td>03/16/2026</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>161576</td>
+                        <td>Hangar</td>
+                        <td aria-label="red">🟥</td>
+                        <td>06/27/2026</td>
+                        <td>11/23/2026</td>
+                        <td>02/28/2026</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>161589</td>
+                        <td aria-label="flight line">F/L</td>
+                        <td aria-label="green">🟩</td>
+                        <td>04/17/2026</td>
+                        <td>04/17/2026</td>
+                        <td>01/22/2026</td>
+                        <td>C</td>
+                    </tr>    
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><b>Up Aircraft</b></td>
+                        <td colspan="5">4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>Down Aircraft</b></td>
+                        <td colspan="5">2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>In-Maintenance Aircraft</b></td>
+                        <td colspan="5">2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
